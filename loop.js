@@ -7,10 +7,11 @@ But the challenge specifies that this should be done without using character 1, 
 
 /*
 Method 1
-LOGIC APPLIIED: From Zero , If the iteration count increases to a three digit number then it has gotten to one hundred . so we compare it on each iteration count and stop the loop once the iteration count is a three digit number
+LOGIC APPLIIED: From Zero , If the iteration count increases to a three digit number then it has gotten to one hundred .
+so we compare it on each iteration count and stop the loop once the iteration count is a three digit number
 */
 
-const lengthTestString='HTU'
+const lengthTestString='HTU' // a 3-length-long string
 const resultArray=[] // array to store 0 to 100
 
 for(let i=0; true; i++){
@@ -24,9 +25,9 @@ for(let i=0; true; i++){
 
 
 /*Method 2
-LOGIC APPLIED: The Unicode of the letter 'd' is 100, so we use this as a condition in our loop.
+LOGIC APPLIED: The UTF-16 value of the letter 'd' is 100, so we use this as a condition in our loop.
 */
-const hundred ='d'.charCodeAt(0) //equiavalent of 100 in unicode value
+const hundred ='d'.charCodeAt(0) // returns the utf-16 value of the letter 'd'
 const resultArray2=[]
 
 for(let i=0; i<=hundred; i++){
